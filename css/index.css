@@ -179,5 +179,16 @@ section {
 }
 section h1 {
   font-family: 'Open Sans', sans-serif;
+  font-size: 8rem;
+}
+section h2 {
+  font-family: 'Open Sans', sans-serif;
   font-size: 4rem;
+  padding: 4% 0;
+}
+section .line {
+  width: 112px;
+  height: 47px;
+  border-bottom: 1px solid black;
+  position: absolute;
 }
