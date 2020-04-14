@@ -57,9 +57,12 @@ html, body {
 	height: 100%;
 }
 
+
+// General //
+
 html {
 	box-sizing: border-box;
-	font-size: 62.5%; 
+	font-size: 62.5%;
 }
 
 // Font Import //
@@ -71,6 +74,12 @@ html {
 @mainFont: 'Roboto', sans-serif;
 @heading-font:'Open Sans', sans-serif;
 @main-color: rgb(92, 92, 92);
+
+.displayFlex() {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
 // HEADER //
 
@@ -97,16 +106,9 @@ header {
 
 section {
 	display: flex;
-	width: 100%;
+	max-width: 100%;
+	height: 60%;
 	background-color: rgb(177, 177, 177);
-
-	.image-container {
-		display: flex;
-		width: 15%;
-
-		img {
-			width: 100%;
-		}
-	} // this closes image container
-
+	margin: 5%;
+	padding: 10%;
 } // this closes the section
