@@ -153,19 +153,31 @@ html {
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
 }
 header {
-  max-width: 100%;
+  width: 100%;
   display: flex;
-  margin: 20px;
-  padding: 20px;
-  justify-content: space-between;
+  margin: 30px;
+  padding: 30px;
+  justify-content: flex-end;
 }
 header nav {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
-  width: 100%;
+  width: 30%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 header a {
-  justify-content: flex-end;
+  color: #5c5c5c;
+}
+section {
+  display: flex;
+  width: 100%;
+  background-color: #b1b1b1;
+}
+section .image-container {
+  display: flex;
+  width: 15%;
+}
+section .image-container img {
+  width: 100%;
 }
