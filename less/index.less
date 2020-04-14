@@ -70,10 +70,13 @@ html {
 
 
 
-// Mix Ins //
+// Variables //
+
 @mainFont: 'Roboto', sans-serif;
 @heading-font:'Open Sans', sans-serif;
 @main-color: rgb(92, 92, 92);
+
+// Mix Ins //
 
 .displayFlex() {
 	display: flex;
@@ -111,4 +114,11 @@ section {
 	background-color: rgb(177, 177, 177);
 	margin: 5%;
 	padding: 10%;
+	
+	h1 {
+		font-family: @heading-font;
+		font-size: 4rem;
+		
+
+	} // this closes h1
 } // this closes the section
