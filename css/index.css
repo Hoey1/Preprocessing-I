@@ -273,3 +273,8 @@ header a {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
 }
+.workHistory h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  margin: 5%;
+}
