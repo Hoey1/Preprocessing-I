@@ -262,6 +262,7 @@ header a {
   width: 100%;
   border: 1px solid gray;
   padding: 1% 0;
+  text-indent: 2%;
 }
 .workHistory {
   display: flex;
