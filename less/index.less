@@ -268,7 +268,7 @@ header {
   }
 
   .listen {
-    max-width: 50%;
+    width: 49%;
 
     p {
       font-family: @mainFont;
@@ -278,7 +278,7 @@ header {
   } // This closes .listen
 
   .stuff {
-    max-width: 50%;
+    width: 49%;
 
     ul {
       width: 100%;
@@ -288,9 +288,23 @@ header {
       line-height: 2.6;
       justify-content: flex-start;
 
-      .li {
+      li {
         //line-height: 1.6;
+        width: 100%;
+        border: 1px solid gray;
+        padding: 1% 0;
       } // this closes li
     } // this closes ul
   } // this closes stuff
 } // This closes .top-middle
+
+.workHistory {
+  display: flex;
+  margin: 5%;
+  justify-content: space-between;
+
+  h3 {
+    font-family: @heading-font;
+    font-size: 2rem;
+  } //this closes h3
+} //This closes .workHistory

@@ -240,7 +240,7 @@ header a {
   font-weight: bold;
 }
 .top-middle .listen {
-  max-width: 50%;
+  width: 49%;
 }
 .top-middle .listen p {
   font-family: "Roboto", sans-serif;
@@ -248,7 +248,7 @@ header a {
   line-height: 1.6;
 }
 .top-middle .stuff {
-  max-width: 50%;
+  width: 49%;
 }
 .top-middle .stuff ul {
   width: 100%;
@@ -257,4 +257,18 @@ header a {
   margin: 2% auto;
   line-height: 2.6;
   justify-content: flex-start;
+}
+.top-middle .stuff ul li {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 1% 0;
+}
+.workHistory {
+  display: flex;
+  margin: 5%;
+  justify-content: space-between;
+}
+.workHistory h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
 }
