@@ -187,8 +187,16 @@ section h2 {
   padding: 4% 0;
 }
 section .line {
-  width: 112px;
+  width: 60%;
   height: 47px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #494949;
   position: absolute;
+}
+section .blurb {
+  display: flex;
+  flex-direction: column;
+}
+section .blurb p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
 }
