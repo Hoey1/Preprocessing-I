@@ -119,7 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -152,51 +152,109 @@ html {
   font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
 }
-header {
+.container {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
   display: flex;
-  margin: 30px;
-  padding: 30px;
+  margin: 5%;
   justify-content: flex-end;
 }
 header nav {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
   width: 30%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 header a {
   color: #5c5c5c;
 }
-section {
+.gray-box {
   display: flex;
   max-width: 100%;
   height: 60%;
   background-color: #b1b1b1;
   margin: 5%;
-  padding: 10%;
-}
-section h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 8rem;
-}
-section h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 4rem;
-  padding: 4% 0;
-}
-section .line {
-  width: 60%;
-  height: 47px;
-  border-bottom: 1px solid #494949;
-  position: absolute;
-}
-section .blurb {
-  display: flex;
+  padding: 4%;
   flex-direction: column;
 }
-section .blurb p {
-  font-family: 'Roboto', sans-serif;
+.gray-box .photo {
+  width: 350px;
+  height: 350px;
+}
+.gray-box .photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.gray-box h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 8rem;
+}
+.gray-box h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  margin: 4% 0;
+}
+.gray-box .line {
+  width: 100%;
+  border-bottom: 1px solid #494949;
+  margin-bottom: 4%;
+}
+.gray-box .blurb {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4%;
+}
+.gray-box .blurb p {
+  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
+}
+.gray-box button {
+  width: 20%;
+  padding: 2% 0;
+  background-color: slategray;
+  border: none;
+  color: white;
+  font-size: 2.2rem;
+  border-radius: 1rem;
+}
+.top-middle {
+  display: flex;
+  margin: 5%;
+  justify-content: space-between;
+}
+.top-middle h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 4%;
+  font-weight: bold;
+}
+.top-middle h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 3%;
+  font-weight: bold;
+}
+.top-middle .listen {
+  max-width: 50%;
+}
+.top-middle .listen p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+.top-middle .stuff {
+  max-width: 50%;
+}
+.top-middle .stuff ul {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin: 2% auto;
+  line-height: 2.6;
+  justify-content: flex-start;
 }

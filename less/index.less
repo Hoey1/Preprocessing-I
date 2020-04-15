@@ -4,146 +4,293 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-	height: 100%;
+html,
+body {
+  height: 100%;
 }
-
 
 // General //
 
 html {
-	box-sizing: border-box;
-	font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 // Font Import //
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
 
 // Variables //
 
-@mainFont: 'Roboto', sans-serif;
-@heading-font:'Open Sans', sans-serif;
+@mainFont: "Roboto", sans-serif;
+@heading-font: "Open Sans", sans-serif;
 @main-color: rgb(92, 92, 92);
 
 // Mix Ins //
 
 .displayFlex() {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 // HEADER //
 
 header {
-	width: 100%;
-	display: flex;
-	margin: 30px;
-	padding: 30px;
-	justify-content: flex-end;
+  display: flex;
+  margin: 5%;
+  justify-content: flex-end;
 
-		nav {
-			font-family: @heading-font;
-			font-size: 1.5rem;
-			width: 30%;
-			display: flex;
-			justify-content: space-around;
+  nav {
+    font-family: @heading-font;
+    font-size: 1.5rem;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+  } // this closes the nav
 
-		} // this closes the nav
-
-		a {
-			color: @main-color
-		} // this closes the nav links
+  a {
+    color: @main-color;
+  } // this closes the nav links
 } // this closes the header
 
-section {
-	display: flex;
-	max-width: 100%;
-	height: 60%;
-	background-color: rgb(177, 177, 177);
-	margin: 5%;
-	padding: 10%;
-	
-	h1 {
-		font-family: @heading-font;
-		font-size: 8rem;
-	} // this closes h1
+.gray-box {
+  display: flex;
+  max-width: 100%;
+  height: 60%;
+  background-color: rgb(177, 177, 177);
+  margin: 5%;
+  padding: 4%;
+  flex-direction: column;
 
-	h2 {
-		font-family: @heading-font;
-		font-size: 4rem;
-		padding: 4% 0;
-	} // this closes h2
+  .photo {
+    width: 350px;
+    height: 350px;
 
-	.line {
-		width: 60%;
-		height: 47px;
-		border-bottom: 1px solid rgb(73, 73, 73);
-		position: absolute;
-	} // this closes .line
-	
-	.blurb {
-		display: flex;
-		flex-direction: column;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    } // this closes img
+  } // this closes photo
 
-		p {
-			font-family: @mainFont;
-			font-size: 1.5rem;
-		} // this closes p
+  h1 {
+    font-family: @heading-font;
+    font-size: 8rem;
+  } // this closes h1
 
-	} // this closes blurb
-	
+  h2 {
+    font-family: @heading-font;
+    font-size: 2rem;
+    margin: 4% 0;
+  } // this closes h2
 
-} // this closes the section
+  .line {
+    width: 100%;
+    border-bottom: 1px solid rgb(73, 73, 73);
+    margin-bottom: 4%;
+  } // this closes .line
 
+  .blurb {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+
+    p {
+      font-family: @mainFont;
+      font-size: 1.5rem;
+    } // this closes p
+  } // this closes blurb
+
+  button {
+    width: 20%;
+    padding: 2% 0;
+    background-color: slategray;
+    border: none;
+    color: white;
+    font-size: 2.2rem;
+    border-radius: 1rem;
+  }
+} // this closes the gray-box
+
+.top-middle {
+  display: flex;
+  margin: 5%;
+  justify-content: space-between;
+
+  h2 {
+    font-family: @heading-font;
+    font-size: 2.5rem;
+    margin-bottom: 4%;
+    font-weight: bold;
+  } // This closes h2
+
+  h3 {
+    font-family: @heading-font;
+    font-size: 2rem;
+    margin-bottom: 3%;
+    font-weight: bold;
+  }
+
+  .listen {
+    max-width: 50%;
+
+    p {
+      font-family: @mainFont;
+      font-size: 1.5rem;
+      line-height: 1.6;
+    } // This closes p inside listen
+  } // This closes .listen
+
+  .stuff {
+    max-width: 50%;
+
+    ul {
+      width: 100%;
+      font-family: @mainFont;
+      font-size: 1.5rem;
+      margin: 2% auto;
+      line-height: 2.6;
+      justify-content: flex-start;
+
+      .li {
+        //line-height: 1.6;
+      } // this closes li
+    } // this closes ul
+  } // this closes stuff
+} // This closes .top-middle
