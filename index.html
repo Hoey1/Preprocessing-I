@@ -7,10 +7,11 @@
     <title>My Resume</title>
 
     <link rel="stylesheet" href="css/index.css" />
-
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://learn.lambdaschool.com/favicon.ico"
+    />
   </head>
   <style>
     A {
@@ -18,65 +19,57 @@
     }
   </style>
   <body>
-    <div class="container">
-      <div class="top-bar">
-        <header>
-          <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </header>
+    <header>
+      <div class="video-container">
+        <video autoplay loop muted class="video-bg">
+          <source
+            src="./assets/Puppiness.mp4"
+            type="video/webm"
+            alt="Dog on the beach video"
+          />
+        </video>
       </div>
-      <section>
-        <div class="gray-box">
-          <div class="photo">
-            <img src="./assets/FullSizeRender.jpeg" alt="Memoji of Joey" />
-          </div>
-          <h1>Joey Wilson - Web Dev</h1>
-          <h2>Technology Is My Jam!</h2>
-          <div class="line"></div>
-          <div class="blurb">
-            <p>
-              Occasionally I have time to work on side projects, if you're
-              interested, let me know by signing up on this website.
-            </p>
-          </div>
-          <button class="team-up">Lets Team Up</button>
-        </div>
-      </section>
-      <div class="top-middle">
-        <div class="listen">
-          <h2>Listen Up...</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </p>
-        </div>
-        <div class="stuff">
-          <h3>Stuff I'm Good At:</h3>
+
+      <div class="header-content">
+        <nav>
           <ul>
-            <li>Nunchuck Skills</li>
-            <li>Bow Hunting Skills</li>
-            <li>Computer Hacking Skills</li>
-            <li>Feeding Tina</li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#coffee">Buy Me A Coffee</a></li>
           </ul>
+        </nav>
+        <h1>JOEY Wilson</h1>
+        <hr />
+        <h2>I like long walks on the beach and I write code</h2>
+      </div>
+    </header>
+    <section>
+      <div class="mainContent">
+        <div class="firstContainer">
+          <div class="firstWrapper">
+            <img
+              src="./assets/daniel-korpai-aUmq85-2V7I-unsplash.jpg"
+              alt="something"
+            />
+          </div>
+          <div class="secondWrapper">
+            <img src="./assets/Upper-left.png" alt="forgot" />
+          </div>
+        </div>
+        <div class="secondContainer">
+          <div class="thirdWrapper">
+            <img src="./assets/new1.png" alt="new one" />
+          </div>
+        </div>
+        <div class="thirdContainer">
+          <div class="fourthWrapper">
+            <img src="./assets/lower-left.png" alt="???" />
+          </div>
+          <div class="fifthWrapper">
+            <img src="./assets/lower-right.png" alt="lower right" />
+          </div>
         </div>
       </div>
-      <div class="workHistory">
-        <h3>Work History</h3>
-      </div>
-      <div class="rowOne">
-        <h4>Yrs</h4>
-      </div>
-    </div>
+    </section>
   </body>
 </html>

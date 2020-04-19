@@ -128,7 +128,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -144,6 +146,10 @@ body {
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 // Font Import //
@@ -168,155 +174,207 @@ html {
   max-width: 1200px;
   margin: 0 auto;
 }
+/////////////////////////
+/////////////////////////
+/////////////////////////
+/////////////////////////
 
-// HEADER //
+//////////////////////////////////
+/////// HERO & HEADER AREA ///////
+//////////////////////////////////
 
 header {
+  max-width: auto;
+  /*   margin: 0 auto; */
+  height: 80vh;
+  background-color: #eee;
+  background-image: url("960x360.png"); /* link to fallback static image here */
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+header,
+section {
+  text-align: center;
+}
+section {
+  margin-top: 1rem;
+}
+
+.header-content {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin-top: 20rem;
+  margin-bottom: 4%;
+  font-size: 8rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: @mainFont;
+}
+
+header h2 {
+  margin-top: 5%;
+  font-size: 2.2rem;
+  color: #fff;
+  font-family: @heading-font;
+}
+
+hr {
+  width: 9%;
+}
+
+nav ul {
+  display: inline-block;
+  margin: 4% 0;
+  font-family: @mainFont;
+  font-weight: lighter;
+}
+
+ul hr {
+  width: 5%;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0.8rem;
+  font-size: 1.6rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.video-bg {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+}
+
+video {
+  /*   display: block; */
   display: flex;
-  margin: 5%;
-  justify-content: flex-end;
+}
 
-  nav {
-    font-family: @heading-font;
-    font-size: 1.5rem;
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-  } // this closes the nav
+.video-container {
+  max-height: 100vh;
+  max-width: auto;
+  overflow: hidden;
+  position: absolute;
+}
 
-  a {
-    color: @main-color;
-  } // this closes the nav links
-} // this closes the header
+section {
+  display: block;
+  width: 100%;
+  height: 1000px;
+}
 
-.gray-box {
-  display: flex;
-  max-width: 100%;
-  height: 60%;
-  background-color: rgb(177, 177, 177);
-  margin: 5%;
-  padding: 4%;
-  flex-direction: column;
+.mainContent {
+  display: block;
+  border-top: solid 1px #fafafa;
+  margin-top: 10%;
 
-  .photo {
-    width: 350px;
-    height: 350px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-    } // this closes img
-  } // this closes photo
-
-  h1 {
-    font-family: @heading-font;
-    font-size: 8rem;
-  } // this closes h1
-
-  h2 {
-    font-family: @heading-font;
-    font-size: 2rem;
-    margin: 4% 0;
-  } // this closes h2
-
-  .line {
+  .firstContainer {
+    border-right: solid 1px #fafafa;
+    border-left: none;
+    box-sizing: border-box;
     width: 100%;
-    border-bottom: 1px solid rgb(73, 73, 73);
-    margin-bottom: 4%;
-  } // this closes .line
+    //display: block;
+    height: 50%;
 
-  .blurb {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 4%;
+    .firstWrapper {
+      height: 50%;
+      width: 50%;
+      //object-fit: cover;
 
-    p {
-      font-family: @mainFont;
-      font-size: 1.5rem;
-    } // this closes p
-  } // this closes blurb
+      img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        // object-fit: cover;
+        float: left;
+      } //this closes img
+    } //this closes .firstWrapper
 
-  button {
-    width: 20%;
-    padding: 2% 0;
-    background-color: slategray;
-    border: none;
-    color: white;
-    font-size: 2.2rem;
-    border-radius: 1rem;
-  }
-} // this closes the gray-box
+    .secondWrapper {
+      height: 50%;
+      width: 50%;
+      float: right;
 
-.top-middle {
-  display: flex;
-  margin: 5%;
-  justify-content: space-between;
+      img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        //object-fit: cover;
+      }
+    } //This closes .secondWrapper
+  } //This closes .firstContainer
+  .secondContainer {
+    border-right: solid 1px #fafafa;
+    border-left: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
 
-  h2 {
-    font-family: @heading-font;
-    font-size: 2.5rem;
-    margin-bottom: 4%;
-    font-weight: bold;
-  } // This closes h2
-
-  h3 {
-    font-family: @heading-font;
-    font-size: 2rem;
-    margin-bottom: 3%;
-    font-weight: bold;
-  }
-
-  .listen {
-    width: 49%;
-
-    p {
-      font-family: @mainFont;
-      font-size: 1.5rem;
-      line-height: 1.6;
-    } // This closes p inside listen
-  } // This closes .listen
-
-  .stuff {
-    width: 49%;
-
-    ul {
+    .thirdWrapper {
+      height: 50%;
       width: 100%;
-      font-family: @mainFont;
-      font-size: 1.5rem;
-      margin: 2% auto;
-      line-height: 2.6;
-      justify-content: flex-start;
+      //float: right;
 
-      li {
-        //line-height: 1.6;
-        width: 100%;
-        border: 1px solid gray;
-        padding: 1% 0;
-        text-indent: 2%;
-      } // this closes li
-    } // this closes ul
-  } // this closes stuff
-} // This closes .top-middle
+      img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+      } //this closes img in .thirdwrapper
+    } //this closes .thirdWrapper
+  } //This closes second container
 
-.workHistory {
-  display: flex;
-  margin: 5%;
-  justify-content: space-between;
+  .thirdContainer {
+    border-right: solid 1px #fafafa;
+    border-left: none;
+    box-sizing: border-box;
+    width: 100%;
+    //display: block;
+    height: 50%;
 
-  h3 {
-    font-family: @heading-font;
-    font-size: 2rem;
-  } //this closes h3
+    .fourthWrapper {
+      height: 50%;
+      width: 50%;
+      //object-fit: cover;
 
-  h4 {
-    font-family: @heading-font;
-    font-size: 1.8rem;
-    margin: 5%;
-  } //this closes h4
+      img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        // object-fit: cover;
+        float: left;
+      } //this closes img
+    } //this closes .firstWrapper
 
-  .rowOne {
-  } //This closes .rowOne
-} //This closes .workHistory
+    .fifthWrapper {
+      height: 50%;
+      width: 50%;
+      float: right;
 
-// I need to spread everything out across, space-between, maybe columns?
+      img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        //object-fit: cover;
+      }
+    } //This closes .secondWrapper
+  } //This closes .firstContainer
+} //this closes mainContent
